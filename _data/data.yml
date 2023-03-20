@@ -9,7 +9,7 @@ sidebar:
     # Profile information
     name: Viktor Gsteiger
     tagline: M.Sc. Student and DevOps Engineer
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: v.gsteiger@gmail.com
@@ -19,6 +19,7 @@ sidebar:
     linkedin: viktor-gsteiger
     github: vGsteiger
     goodreads: 62284336-viktor
+    orcid: 0000-0002-6750-5500
 
     languages:
       title: Languages
@@ -111,9 +112,7 @@ experiences:
 projects:
     title: Projects
     intro: >
-      You can list your side projects in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+      I have participated in the following projects
     assignments:
       - title: modyn
         link: "https://github.com/eth-easl/dynamic_datasets_dsl"
@@ -130,7 +129,7 @@ publications:
         authors: Silvan Heller; Rahel Arnold; Ralph Gasser; Viktor Gsteiger; Mahnaz Parian-Scherb; Luca Rossetto; Loris Sauter; Florian Spiess; Heiko Schuldt
         conference: International Conference on Multimedia Modeling (2022)
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+      - title: "Interactive video retrieval evaluation at a distance: comparing sixteen interactive video search systems in a remote setting at the 10th Video Browser Showdown"
         link: "https://doi.org/10.1007/s13735-021-00225-2"
         authors: Silvan Heller; Viktor Gsteiger; Werner Bailer; Cathal Gurrin; Björn Þór Jónsson; Jakub Lokoč; Andreas Leibetseder; František Mejzlík; Ladislav Peška; Luca Rossetto et al.
         conference: "International Journal of Multimedia Information Retrieval (2022)"
