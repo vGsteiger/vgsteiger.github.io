@@ -1,0 +1,139 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Viktor Gsteiger
+    tagline: M.Sc. Student and DevOps Engineer
+    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: v.gsteiger@gmail.com
+    timezone: Europe/Zurich Timezone
+    citizenship:
+    website: vgsteiger.com #do not add http://
+    linkedin: viktor-gsteiger
+    github: vGsteiger
+    goodreads: 62284336-viktor
+
+    languages:
+      title: Languages
+      info:
+        - idiom: German
+          level: Native
+
+        - idiom: English
+          level: Professional
+
+        - idiom: French
+          level: Beginner
+
+    interests:
+      title: Interests
+      info:
+        - item: Reading
+          link:
+
+        - item: Travelling
+          link:
+
+        - item: Cooking
+          link:
+
+career-profile:
+    title: Career Profile
+    summary: |
+      I am a person that loves to work and to get into the small stuff. 
+      I am currently studying for a masters' degree in computer science 
+      at the ETH Zürich in Switzerland as well as working as a working 
+      student in a DevOps Engineer role at BSI. I spend my spare time being 
+      a member of the audit committee of the national umbrella organization 
+      of youth parliaments, being a model united nations delegate and former 
+      president of the Model United Nations club Basel, and reading about 
+      philosophy and social studies.
+education:
+    title: Education
+    info:
+      - degree: MSc in Computer Science
+        university: ETH Zürich
+        time: 2021 - 2024 (expected)
+        details: |
+          During my masters studies I focus on Data Manamgement Systems as well 
+          as cloud applications. I participated in various courses on the topics 
+          of cloud computing, high performance and parallel systems, serverless, 
+          and code optimization. Additionally, I participated in practical labs 
+          where I contributed to paper submissions under Prof. Dr. Ana Klimovic.
+            - Major: Data Management Systems
+            - Minor: Programming Languages and Software Engineering
+      - degree: BSc in Computer Science
+        university: University of Basel
+        time: 2018 - 2021
+        details: |
+          Gained fundamental knowledge in computer architecuteres, algorithm theory, 
+          theoretical computer science, network secutiry, artificial intelligence, software 
+          architecture and engineering. Contributed to two papers as part of my bachelors thesis
+          in the Databases and Information Systems (DBIS) group under Prof. Dr. Heiko Schuldt.
+            - GPA: 5.7/6 where 6 is best
+            - Bachelor Thesis: "Evaluating Algorithms for Temporal Queries in Ad-Hoc Video Retrieval"
+experiences:
+    title: Experiences
+    info:
+      - role: DevOps Engineer
+        time: 2022 - Present
+        company: Business Systems Integraions AG, Zürich, Switzerland
+        details: |
+          Responsible for designing, implementing, and maintaining complex infrastructure systems. 
+          This includes using technologies such as Kubernetes, Helm charts, Artifactory, GitLab, 
+          Ceph storage, S3, OpenShift, Docker, PostgreSQL, and Oracle databases.
+      - role: Full-Stack Software Engineering Contractor
+        time: 2020 - 2021
+        company: Bank for International Settlements, Basel, Switzerland
+        details: |
+          Partnership of the BIS and the University of Basel under the direct supervision of Prof. Dr. Heiko Schuldt.
+          Responsible for contributing to a natural language processing project stack in a Linux/Python/PostgreSQL/Azure 
+          DevOps/Angular environment, development and maintenance of information retrieval system.
+      - role: Teaching and Research Assistant
+        time: 2019 - 2021
+        company: University of Basel Department of Mathematics and Computer Science, Basel, Switzerland
+        details: |
+          As a Research Assistant under the supervision of Prof. Dr. sc. techn. ETH Heiko Schuldt, 
+          I was responsible for completing a variety of tasks related to graphical and analytical analysis 
+          of an international competition evaluation, as well as contributing to an analysis paper of the Video Browser Showdown 2021.
+          Teaching Assistant for the following lectures:
+            - 2x Extended programming basics (Java)
+            - Algorithms and Data Structures (Python)
+            - Programming Language Paradigms and Concepts (C++, Haskell, Prolog)
+            - Pattern Recognition (Python, Tensorflow)
+projects:
+    title: Projects
+    intro: >
+      You can list your side projects in this
+      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    assignments:
+      - title: modyn
+        link: "https://github.com/eth-easl/dynamic_datasets_dsl"
+        tagline: "Modyn is a research-platform for training ML models on dynamic datasets."
+      - title: vitrivr
+        link: "https://github.com/vitrivr"
+        tagline: "vitrivr is an open source full-stack content-based multimedia retrieval system with a focus on video."
+
+publications:
+    title: Publications
+    papers:
+      - title: Multi-modal Interactive Video Retrieval with Temporal Queries
+        link: "https://doi.org/10.1007/978-3-030-98355-0_44"
+        authors: Silvan Heller; Rahel Arnold; Ralph Gasser; Viktor Gsteiger; Mahnaz Parian-Scherb; Luca Rossetto; Loris Sauter; Florian Spiess; Heiko Schuldt
+        conference: International Conference on Multimedia Modeling (2022)
+
+      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+        link: "https://doi.org/10.1007/s13735-021-00225-2"
+        authors: Silvan Heller; Viktor Gsteiger; Werner Bailer; Cathal Gurrin; Björn Þór Jónsson; Jakub Lokoč; Andreas Leibetseder; František Mejzlík; Ladislav Peška; Luca Rossetto et al.
+        conference: "International Journal of Multimedia Information Retrieval (2022)"
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
