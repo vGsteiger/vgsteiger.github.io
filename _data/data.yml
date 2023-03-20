@@ -46,7 +46,7 @@ sidebar:
           link:
 
 career-profile:
-    title: Career Profile
+    title: sumary
     summary: |
       I am a person that loves to work and to get into the small stuff. 
       I am currently studying for a masters' degree in computer science 
@@ -112,7 +112,7 @@ experiences:
 projects:
     title: Projects
     intro: >
-      I have participated in the following projects
+      I have contributed to the following projects:
     assignments:
       - title: modyn
         link: "https://github.com/eth-easl/dynamic_datasets_dsl"
