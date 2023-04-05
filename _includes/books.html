@@ -7,13 +7,13 @@
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-book fa-stack-1x fa-inverse"></i>
     </span>
-    {{ career-profile.title }}
+    {{ books.title }}
   </h2>
 
   {% for book in books.books %}
     <div class="item">
 
-      <span class="book-title">
+      <span class="project-title">
         {% if book.link %}
         <a href="{{ book.link }}" target="_blank">{{ book.title }}</a>
         {% else %}
@@ -22,7 +22,7 @@
       </span>
 
       {% if book.tagline %}
-      - <span class="book-tagline">{{ book.tagline }}</span>
+      - <span class="project-tagline">{{ book.tagline }}</span>
       {% endif %}
 
     </div><!--//item-->
