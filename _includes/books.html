@@ -1,0 +1,32 @@
+{% assign books = site.data.data.books %}
+{% if books %}
+<section class="section summary-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-book fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ career-profile.title }}
+  </h2>
+
+  {% for book in books.books %}
+    <div class="item">
+
+      <span class="book-title">
+        {% if book.link %}
+        <a href="{{ book.link }}" target="_blank">{{ book.title }}</a>
+        {% else %}
+        {{ book.title }}
+        {% endif %}
+      </span>
+
+      {% if book.tagline %}
+      - <span class="book-tagline">{{ book.tagline }}</span>
+      {% endif %}
+
+    </div><!--//item-->
+  {% endfor %}
+    
+</section><!--//section-->
+{% endif %}

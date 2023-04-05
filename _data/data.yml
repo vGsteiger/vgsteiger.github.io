@@ -26,10 +26,8 @@ sidebar:
       info:
         - idiom: German
           level: Native
-
         - idiom: English
           level: Professional
-
         - idiom: French
           level: Beginner
 
@@ -37,25 +35,21 @@ sidebar:
       title: Interests
       info:
         - item: Reading
-          link:
-
         - item: Travelling
-          link:
-
         - item: Cooking
-          link:
 
 career-profile:
-    title: sumary
+    title: Summary
     summary: |
-      I am a person that loves to work and to get into the small stuff. 
-      I am currently studying for a masters' degree in computer science 
-      at the ETH Zürich in Switzerland as well as working as a working 
-      student in a DevOps Engineer role at BSI. I spend my spare time being 
-      a member of the audit committee of the national umbrella organization 
-      of youth parliaments, being a model united nations delegate and former 
-      president of the Model United Nations club Basel, and reading about 
-      philosophy and social studies.
+      Hi, I'm Viktor, and I'm excited to share my academic and professional journey with you. I am currently pursuing a Master's degree in Data Management Systems at ETH Zürich, where I'm developing expertise in the nitty-gritty of computer science. I'm fortunate to have had a number of opportunities to apply my skills in a variety of settings.
+
+      As a Research Assistant at the University of Basel Department of Mathematics and Computer Science, I contributed to a variety of tasks related to graphical and analytical analysis of an international competition. I also helped develop an analysis paper for the Video Browser Showdown 2021, and served as a Teaching Assistant for several lectures, including Extended programming basics in Java, Algorithms and Data Structures in Python, Programming Language Paradigms and Concepts in C++, Haskell, and Prolog, and Pattern Recognition in Python and Tensorflow.
+
+      In addition to my academic accomplishments, I have made valuable contributions to the tech industry as a Full-Stack Software Engineering Contractor at the Bank for International Settlements, where I worked on a natural language processing project stack in a Linux/Python/PostgreSQL/Azure DevOps/Angular environment, as well as the development and maintenance of an information retrieval system. I currently work as a DevOps Engineer at Business Systems Integrations AG in Zürich, where I design, implement, and maintain complex infrastructure systems using cutting-edge technologies such as Kubernetes, Helm charts, Artifactory, GitLab, Ceph storage, S3, OpenShift, Docker, PostgreSQL, and Oracle databases.
+
+      Beyond my academic and professional pursuits, I'm an active member of the audit committee for the national umbrella organization of youth parliaments, a highly regarded Model United Nations delegate, and an avid reader of philosophy and social studies.
+
+      I invite you to explore my personal website to learn more about my background and journey to success.
 education:
     title: Education
     info:
@@ -133,6 +127,18 @@ publications:
         link: "https://doi.org/10.1007/s13735-021-00225-2"
         authors: Silvan Heller; Viktor Gsteiger; Werner Bailer; Cathal Gurrin; Björn Þór Jónsson; Jakub Lokoč; Andreas Leibetseder; František Mejzlík; Ladislav Peška; Luca Rossetto et al.
         conference: "International Journal of Multimedia Information Retrieval (2022)"
+
+books:
+    title: Books
+    books:
+      - title: "Code Craft: The Practice of Writing Excellent Code"
+        tagline: "Code Craft is like realizing you've been writing code blindfolded for years and now finally seeing the light, as it guides you through the principles and practices of writing excellent code that you never knew existed, all while making you question why you ever thought it was a good idea to write spaghetti code in the first place."
+      - title: "Catch-22"
+        tagline: "Reading this book is like trying to escape a Catch-22 of its own, where the more you try to put it down, the more you're compelled to read on through its twisted, hilarious, and thought-provoking pages."
+      - title: "The Soul of a New Machine"
+        tagline: "Reading The Soul of a New Machine is like watching a group of engineers trade their sanity for a machine, as they race against the clock to build a new computer that is faster, more powerful, and more complex than anything that came before it, all while wondering if it's worth the sacrifice of their personal lives and well-being to achieve this technological marvel."
+      - title: "UNIX: A History and a Memoir"
+        tagline: "Diving into UNIX: A History and a Memoir is like taking a trip through the birth of the digital age, where you'll encounter legendary computer scientists, mind-boggling technical innovations, and epic battles over intellectual property and open-source philosophy, all while realizing that you still have no idea what the command line actually does and hoping that you won't accidentally delete your entire hard drive."
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
