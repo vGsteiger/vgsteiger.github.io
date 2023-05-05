@@ -114,10 +114,15 @@ projects:
 publications:
     title: Publications
     papers:
+      - title: Towards A Platform and Benchmark Suite for Model Training on Dynamic Datasets
+        link: "https://doi.org/10.1145/3578356.3592585"
+        authors: Maximilian Böther, Foteini Strati, Viktor Gsteiger, Ana Klimovic
+        conference: "Proceedings of the 3rd Workshop on Machine Learning and Systems (2023)"
+    
       - title: Multi-modal Interactive Video Retrieval with Temporal Queries
         link: "https://doi.org/10.1007/978-3-030-98355-0_44"
         authors: Silvan Heller; Rahel Arnold; Ralph Gasser; Viktor Gsteiger; Mahnaz Parian-Scherb; Luca Rossetto; Loris Sauter; Florian Spiess; Heiko Schuldt
-        conference: International Conference on Multimedia Modeling (2022)
+        conference: "International Conference on Multimedia Modeling (2022)"
 
       - title: "Interactive video retrieval evaluation at a distance: comparing sixteen interactive video search systems in a remote setting at the 10th Video Browser Showdown"
         link: "https://doi.org/10.1007/s13735-021-00225-2"
