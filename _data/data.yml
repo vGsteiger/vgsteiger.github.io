@@ -43,8 +43,6 @@ career-profile:
     summary: |
       Hi, I'm Viktor, and I'm excited to share my academic and professional journey with you. I am currently pursuing a Master's degree in Data Management Systems at ETH Zürich, where I'm developing expertise in the nitty-gritty of computer science. I'm fortunate to have had a number of opportunities to apply my skills in a variety of settings.
 
-      Beyond my academic and professional pursuits, I'm an active member of the audit committee for the national umbrella organization of youth parliaments, a highly regarded Model United Nations delegate, and an avid reader of philosophy and social studies.
-
       I invite you to explore my personal website to learn more about my background and journey to success.
 education:
     title: Education
@@ -58,6 +56,12 @@ education:
           of cloud computing, high performance and parallel systems, serverless, 
           and code optimization. Additionally, I participated in practical labs 
           where I contributed to paper submissions under Prof. Dr. Ana Klimovic.
+          My masters thesis is on the topic of Geo-Distributed Serverless Computing Systems 
+          under the supervision of Mohammad Shahrad at the University of British 
+          Columbia Cloud Infrastructure Research for Reliability, Usability, and Scalability (CIRRUS) Lab. 
+          The thesis is supervised from ETH Zürich by Ana Klimovic. Additionally, 
+          the thesis is supported by the Mitacs Globalink Research Award and the Swiss-European Mobility Program Worldwide Project.
+          
             - Major: Data Management Systems
             - Minor: Programming Languages and Software Engineering
       - degree: BSc in Computer Science
@@ -73,22 +77,27 @@ education:
 experiences:
     title: Experiences
     info:
+      - role: Forward Deployed Software Engineer Intern
+        time: July 2023 - September 2023
+        company: Palantir Technologies
+        details: |
+          Developing customs solutions based on the Palantir Foundry techstack.
       - role: DevOps Engineer
-        time: 2022 - Present
+        time: January 2022 - June 2023
         company: Business Systems Integraions AG, Zürich, Switzerland
         details: |
           Responsible for designing, implementing, and maintaining complex infrastructure systems. 
           This includes using technologies such as Kubernetes, Helm charts, Artifactory, GitLab, 
           Ceph storage, S3, OpenShift, Docker, PostgreSQL, and Oracle databases.
       - role: Full-Stack Software Engineering Contractor
-        time: 2020 - 2021
+        time: February 2020 - September 2021
         company: Bank for International Settlements, Basel, Switzerland
         details: |
           Partnership of the BIS and the University of Basel under the direct supervision of Prof. Dr. Heiko Schuldt.
           Responsible for contributing to a natural language processing project stack in a Linux/Python/PostgreSQL/Azure 
           DevOps/Angular environment, development and maintenance of information retrieval system.
       - role: Teaching and Research Assistant
-        time: 2019 - 2021
+        time: September 2019 - December 2021
         company: University of Basel Department of Mathematics and Computer Science, Basel, Switzerland
         details: |
           As a Research Assistant under the supervision of Prof. Dr. sc. techn. ETH Heiko Schuldt, 
@@ -130,7 +139,7 @@ publications:
         conference: "International Journal of Multimedia Information Retrieval (2022)"
 
 books:
-    title: Books
+    title: Notable Books
     books:
       - title: "Code Craft: The Practice of Writing Excellent Code"
         tagline: "Code Craft is like realizing you've been writing code blindfolded for years and now finally seeing the light, as it guides you through the principles and practices of writing excellent code that you never knew existed, all while making you question why you ever thought it was a good idea to write spaghetti code in the first place."
