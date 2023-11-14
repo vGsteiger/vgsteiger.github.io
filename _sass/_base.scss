@@ -43,122 +43,6 @@ p {
   @include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
 }
 
-.sidebar-wrapper {
-  grid-column: span 3;
-  order: 2;
-  background: $theme-color;
-  color: #fff;
-  a {
-    color: #fff;
-  }
-  .profile-container {
-    padding: 30px;
-    //background: darken($theme-color, 10%);
-    background: rgba(0, 0, 0, 0.2);
-    text-align: center;
-    color: #fff;
-  }
-  .name {
-    font-size: 32px;
-    font-weight: 900;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  .tagline {
-    color: rgba(256, 256, 256, 0.6);
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .profile {
-    margin-bottom: 15px;
-  }
-
-  .avatar {
-    //used for profile image
-    max-width: 100px;
-    margin-bottom: 15px;
-    border: 0px solid #fff;
-    border-radius: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  }
-  .contact-list {
-    .fas,
-    .fab,
-    .far {
-      margin-right: 5px;
-      font-size: 18px;
-      vertical-align: middle;
-    }
-    li {
-      margin-bottom: 15px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-  .container-block {
-    padding: 30px;
-  }
-  .container-block-title {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  .degree {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
-  .education-container {
-    .item {
-      margin-bottom: 15px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-    .meta {
-      color: rgba(256, 256, 256, 0.6);
-      font-weight: 500;
-      margin-bottom: 0px;
-      margin-top: 0;
-    }
-    .time {
-      color: rgba(256, 256, 256, 0.6);
-      font-weight: 500;
-      margin-bottom: 0px;
-    }
-  }
-  .languages-container {
-    .lang-desc {
-      color: rgba(256, 256, 256, 0.6);
-    }
-  }
-
-  .languages-list {
-    margin-bottom: 0;
-    li {
-      margin-bottom: 10px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  .interests-list {
-    margin-bottom: 0;
-    li {
-      margin-bottom: 10px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-
 .main-wrapper {
   grid-column: span 7;
   background: #001100;
@@ -243,6 +127,60 @@ p {
     }
     .item {
       margin-bottom: 15px;
+    }
+  }
+  .interests-list {
+    margin-bottom: 0;
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .languages-list {
+    margin-bottom: 0;
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .languages-container {
+    .lang-desc {
+      color: rgba(256, 256, 256, 0.6);
+    }
+  }
+  .name {
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .tagline {
+    color: rgba(256, 256, 256, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .profile {
+    margin-bottom: 15px;
+  }
+  .contact-list {
+    .fas,
+    .fab,
+    .far {
+      margin-right: 5px;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+    li {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

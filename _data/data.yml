@@ -2,14 +2,12 @@
 # Be aware that even a small syntax error here can lead to failures in output.
 #
 
-sidebar:
-    about: True
-
+header:
     # Profile information
     name: Viktor Gsteiger
     tagline: M.Sc. Student
-    avatar: profile.jpg
 
+    # Social media links
     email: v.gsteiger@gmail.com
     timezone: Europe/Zurich Timezone
     citizenship:
@@ -28,13 +26,6 @@ sidebar:
           level: Professional
         - idiom: French
           level: Beginner
-
-    interests:
-      title: Interests
-      info:
-        - item: Reading
-        - item: Travelling
-        - item: Cooking
 
 career-profile:
     title: About Me
