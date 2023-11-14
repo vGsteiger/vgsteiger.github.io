@@ -130,30 +130,9 @@ p {
       }
     }
   }
-  .languages-list {
-    margin-bottom: 0;
-    li {
-      margin-bottom: 10px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-  .languages-container {
-    .lang-desc {
-      color: rgba(256, 256, 256, 0.6);
-    }
-  }
   .name {
     font-size: 32px;
     font-weight: 900;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  .tagline {
-    color: rgba(256, 256, 256, 0.6);
-    font-size: 16px;
-    font-weight: 400;
     margin-top: 0;
     margin-bottom: 10px;
   }
@@ -211,12 +190,15 @@ p {
 .terminal-nav {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   background-color: #000;
   color: #0f0;
   padding: 10px;
   box-sizing: border-box;
-  font-family: 'Courier New', monospace;
+  font-family: 'Inconsolata', monospace;
+  z-index: 1000;
+  overflow: hidden;
 }
 
 .terminal-nav a {
@@ -227,6 +209,26 @@ p {
 
 .terminal-nav a:hover {
   text-decoration: underline;
+}
+
+.terminal-nav-item {
+  color: #0f0;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    color: transparent;
+  }
+  50% {
+    color: #0f0;
+  }
 }
 
 .footer {

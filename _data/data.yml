@@ -5,7 +5,6 @@
 header:
     # Profile information
     name: Viktor Gsteiger
-    tagline: M.Sc. Student
 
     # Social media links
     email: v.gsteiger@gmail.com
@@ -16,16 +15,6 @@ header:
     github: vGsteiger
     goodreads: 62284336-viktor
     orcid: 0000-0002-6750-5500
-
-    languages:
-      title: Languages
-      info:
-        - idiom: German
-          level: Native
-        - idiom: English
-          level: Professional
-        - idiom: French
-          level: Beginner
 
 career-profile:
     title: About Me
