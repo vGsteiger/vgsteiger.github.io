@@ -3,19 +3,18 @@
 #
 
 sidebar:
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+    about: True
+    education: False
 
     # Profile information
     name: Viktor Gsteiger
     tagline: M.Sc. Student and DevOps Engineer
-    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: profile.jpg
 
-    # Sidebar links
     email: v.gsteiger@gmail.com
     timezone: Europe/Zurich Timezone
     citizenship:
-    website: vgsteiger.com #do not add http://
+    website: vgsteiger.com
     linkedin: viktor-gsteiger
     github: vGsteiger
     goodreads: 62284336-viktor
@@ -47,6 +46,16 @@ career-profile:
 education:
     title: Education
     info:
+      - degree: Master Thesis in Geo-Distributed Serverless Computing Systems
+        university: University of British Columbia
+        time: 2023 - 2024 (expected)
+        details: |
+          My masters thesis is on the topic of Geo-Distributed Serverless Computing Systems 
+          under the supervision of Mohammad Shahrad at the University of British 
+          Columbia Cloud Infrastructure Research for Reliability, Usability, and Scalability (CIRRUS) Lab. 
+          The thesis is supervised from ETH Zürich by Ana Klimovic. Additionally, 
+          the thesis is supported by the Mitacs Globalink Research Award, the Swiss-European Mobility Program Worldwide Project,
+          and the Zeno-Karl Schindler Foundation.
       - degree: MSc in Computer Science
         university: ETH Zürich
         time: 2021 - 2024 (expected)
@@ -56,12 +65,6 @@ education:
           of cloud computing, high performance and parallel systems, serverless, 
           and code optimization. Additionally, I participated in practical labs 
           where I contributed to paper submissions under Prof. Dr. Ana Klimovic.
-          My masters thesis is on the topic of Geo-Distributed Serverless Computing Systems 
-          under the supervision of Mohammad Shahrad at the University of British 
-          Columbia Cloud Infrastructure Research for Reliability, Usability, and Scalability (CIRRUS) Lab. 
-          The thesis is supervised from ETH Zürich by Ana Klimovic. Additionally, 
-          the thesis is supported by the Mitacs Globalink Research Award and the Swiss-European Mobility Program Worldwide Project.
-          
             - Major: Data Management Systems
             - Minor: Programming Languages and Software Engineering
       - degree: BSc in Computer Science
@@ -77,6 +80,12 @@ education:
 experiences:
     title: Experiences
     info:
+      - role: Research Assistant
+        time: October 2023 - November 2023
+        company: ETH Zürich
+        details: |
+          Research assistant at the Systems Group under Prof. Dr. Ana Klimovic.
+          Responsible for the porting of a storage system wrapper from Python to C++.
       - role: Forward Deployed Software Engineer Intern
         time: July 2023 - September 2023
         company: Palantir Technologies
@@ -138,17 +147,6 @@ publications:
         authors: Silvan Heller; Viktor Gsteiger; Werner Bailer; Cathal Gurrin; Björn Þór Jónsson; Jakub Lokoč; Andreas Leibetseder; František Mejzlík; Ladislav Peška; Luca Rossetto et al.
         conference: "International Journal of Multimedia Information Retrieval (2022)"
 
-books:
-    title: Notable Books
-    books:
-      - title: "Code Craft: The Practice of Writing Excellent Code"
-        tagline: "Code Craft is like realizing you've been writing code blindfolded for years and now finally seeing the light, as it guides you through the principles and practices of writing excellent code that you never knew existed, all while making you question why you ever thought it was a good idea to write spaghetti code in the first place."
-      - title: "Catch-22"
-        tagline: "Reading this book is like trying to escape a Catch-22 of its own, where the more you try to put it down, the more you're compelled to read on through its twisted, hilarious, and thought-provoking pages."
-      - title: "The Soul of a New Machine"
-        tagline: "Reading The Soul of a New Machine is like watching a group of engineers trade their sanity for a machine, as they race against the clock to build a new computer that is faster, more powerful, and more complex than anything that came before it, all while wondering if it's worth the sacrifice of their personal lives and well-being to achieve this technological marvel."
-      - title: "UNIX: A History and a Memoir"
-        tagline: "Diving into UNIX: A History and a Memoir is like taking a trip through the birth of the digital age, where you'll encounter legendary computer scientists, mind-boggling technical innovations, and epic battles over intellectual property and open-source philosophy, all while realizing that you still have no idea what the command line actually does and hoping that you won't accidentally delete your entire hard drive."
-
+# Replace the footer:
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  © 2023 Viktor Gsteiger
