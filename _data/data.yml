@@ -4,7 +4,6 @@
 
 sidebar:
     about: True
-    education: False
 
     # Profile information
     name: Viktor Gsteiger
