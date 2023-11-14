@@ -217,6 +217,11 @@ p {
   margin-right: 10px;
 }
 
+.terminal-prompt {
+  color: #0f0;
+  margin-bottom: 5px; /* Adjust spacing between prompt and links */
+}
+
 .cursor {
   display: inline-block;
   animation: blink 0.5s infinite;
