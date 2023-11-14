@@ -48,6 +48,9 @@ p {
   .section {
     margin-bottom: 60px;
   }
+  .block {
+    margin-bottom: 30px;
+  }
 
   .experiences-section,
   .educations-section {
@@ -152,7 +155,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .profile {
     margin-bottom: 15px;
@@ -170,6 +173,20 @@ p {
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+    .contact-item {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 0 5px;
     }
   }
 }
