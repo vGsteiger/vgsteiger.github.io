@@ -184,9 +184,6 @@ p {
       flex: 1;
       text-align: center;
       padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin: 0 5px;
     }
   }
 }
@@ -209,6 +206,27 @@ p {
     height: 12px;
     background: lighten($theme-color, 15%);
   }
+}
+
+.terminal-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: #0f0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+}
+
+.terminal-nav a {
+  color: #0f0;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.terminal-nav a:hover {
+  text-decoration: underline;
 }
 
 .footer {
