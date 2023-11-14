@@ -1,3 +1,5 @@
+{% assign contact = site.data.data.contact %}
+{% if contact %}
 <div class="section contact-section" id="contact">
   <h2 class="section-title">
     Contact
@@ -6,34 +8,35 @@
   <div class="contact-row">
     <div class="contact-item email">
       <i class="fas fa-envelope"></i>
-      <a href="mailto:{{ header.email }}">{{ header.email }}</a>
+      <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
     </div>
 
     <div class="contact-item website">
       <i class="fas fa-globe-americas"></i>
-      <a href="http://{{ header.website }}" target="_blank">{{ header.website }}</a>
+      <a href="http://{{ contact.website }}" target="_blank">{{ contact.website }}</a>
     </div>
 
     <div class="contact-item linkedin">
       <i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com/in/{{ header.linkedin }}" target="_blank">{{ header.linkedin }}</a>
+      <a href="https://linkedin.com/in/{{ contact.linkedin }}" target="_blank">{{ contact.linkedin }}</a>
     </div>
   </div>
 
   <div class="contact-row">
     <div class="contact-item github">
       <i class="fab fa-github"></i>
-      <a href="http://github.com/{{ header.github }}" target="_blank">{{ header.github }}</a>
+      <a href="http://github.com/{{ contact.github }}" target="_blank">{{ contact.github }}</a>
     </div>
 
     <div class="contact-item goodreads-g">
       <i class="fab fa-goodreads-g"></i>
-      <a href="https://www.goodreads.com/user/show/{{ header.goodreads }}" target="_blank">{{ header.goodreads }}</a>
+      <a href="https://www.goodreads.com/user/show/{{ contact.goodreads }}" target="_blank">{{ contact.goodreads }}</a>
     </div>
 
     <div class="contact-item pdf">
       <i class="fas fa-id-badge"></i>
-      <a href="https://orcid.org/{{ header.orcid }}" target="_blank">{{ header.orcid }}</a>
+      <a href="https://orcid.org/{{ contact.orcid }}" target="_blank">{{ contact.orcid }}</a>
     </div>
   </div>
 </div><!--//contact-container-->
+{% endif %}
