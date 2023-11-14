@@ -18,6 +18,10 @@ h6 {
   font-weight: 700;
 }
 
+pre {
+  text-align: center;
+}
+
 a {
   color: darken($theme-color, 15%);
   &:hover {
