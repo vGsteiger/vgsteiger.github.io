@@ -19,7 +19,11 @@ h6 {
 }
 
 pre {
+  font-family: "Inconsolata", monospace;
+  color: $text-color-secondary;
+  background: $smoky-white;
   text-align: center;
+  font-size: 14px;
 }
 
 a {
@@ -216,6 +220,12 @@ p {
 }
 
 .terminal-nav-item {
+  color: #0f0;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.terminal-nav-item-not-hover {
   color: #0f0;
   text-decoration: none;
   margin-right: 10px;
