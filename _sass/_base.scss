@@ -237,6 +237,12 @@ p {
   margin-right: 10px;
 }
 
+@media (max-width: 600px) {
+  .header {
+    display: none;
+  }
+}
+
 .footer {
   padding-top: 30px;
   .copyright {
