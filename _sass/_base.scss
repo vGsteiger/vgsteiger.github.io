@@ -212,7 +212,6 @@ p {
   z-index: 1000;
   overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -220,13 +219,6 @@ p {
   color: $smoky-white;
   text-decoration: none;
   margin-right: 10px;
-  flex: 1 0 auto;
-}
-
-@media (max-width: 600px) {
-  .terminal-nav a {
-    flex: 100%;
-  }
 }
 
 .terminal-nav a:hover {
@@ -243,12 +235,6 @@ p {
   color: $theme-color;
   text-decoration: none;
   margin-right: 10px;
-}
-
-@media (max-width: 600px) {
-  .terminal-nav-item {
-    flex: 100%;
-  }
 }
 
 .footer {
