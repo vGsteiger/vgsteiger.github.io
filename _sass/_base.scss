@@ -1,6 +1,17 @@
+/* ======= Theme Color Definitions Adjusted for Palantir Aesthetic ======= */
+$theme-color: #003366;
+$text-color: #212529;
+$text-color-secondary: #5a5a5a;
+$background-color: #ffffff;
+$smoky-white: #f2f4f8;
+$text-grey: #737373;
+$light-blue: #2b4b80;
+$heart: #e83e8c;
+
+
 /* ======= Base ======= */
 body {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Roboto', sans-serif;
   color: $text-color-secondary;
   background: $smoky-white;
   font-size: 14px;
@@ -9,17 +20,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
 pre {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Roboto', sans-serif;
   color: $text-color-secondary;
   background: $smoky-white;
   text-align: center;
@@ -28,13 +34,10 @@ pre {
 }
 
 a {
-  color: darken($theme-color, 15%);
+  color: $theme-color;
   &:hover {
     text-decoration: underline;
-    color: darken($theme-color, 30%);
-  }
-  &:focus {
-    text-decoration: none;
+    color: $light-blue;
   }
 }
 
@@ -43,13 +46,13 @@ p {
 }
 
 .main-wrapper {
-  background: #001100;
+  background: $smoky-white;
   padding: 60px;
   .section-title {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
-    color: darken($theme-color, 15%);
+    color: $text-color;
     position: relative;
     margin-top: 0;
     margin-bottom: 20px;
@@ -192,26 +195,28 @@ p {
   }
   .level-bar-inner {
     height: 12px;
-    background: lighten($theme-color, 15%);
+    background: $light-blue;
   }
 }
 
 .terminal-nav {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  background-color: #000;
-  color: #0f0;
+  background-color: $light-blue;
+  color: $text-color;
   padding: 10px;
   box-sizing: border-box;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Roboto', sans-serif;
   z-index: 1000;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .terminal-nav a {
-  color: #0f0;
+  color: $smoky-white;
   text-decoration: none;
   margin-right: 10px;
 }
@@ -221,29 +226,15 @@ p {
 }
 
 .terminal-nav-item {
-  color: #0f0;
+  color: $text-color;
   text-decoration: none;
   margin-right: 10px;
 }
 
 .terminal-nav-item-not-hover {
-  color: #0f0;
+  color: $theme-color;
   text-decoration: none;
   margin-right: 10px;
-}
-
-.cursor {
-  display: inline-block;
-  animation: blink 0.5s infinite;
-}
-
-@keyframes blink {
-  0%, 100% {
-    color: transparent;
-  }
-  50% {
-    color: #0f0;
-  }
 }
 
 .footer {
@@ -253,8 +244,36 @@ p {
     color: $text-color-secondary;
     font-size: 13px;
   }
+}
 
-  .fa-heart {
-    color: $heart;
-  }
+.footer-icon {
+  width: 50px; /* adjust as needed */
+  height: auto;
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-wrapper {
+  text-align: center; /* Centers the content within the wrapper */
+  width: 100%;
+  margin: auto;
+}
+
+.centered-image {
+  width: 25%; /* Sets the image width to 25% of its parent element */
+  max-width: 100%; /* Ensures the image is not larger than its intrinsic size */
+  height: auto; /* Maintains the aspect ratio */
+  margin: 0 auto; /* Centers the image horizontally */
+  display: block; /* Images are inline by default. This ensures it can be centered properly using margin */
+}
+
+.centered-text {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }

@@ -1,13 +1,7 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
-
 header:
-    # Profile information
     name: Viktor Gsteiger
 
 contact:
-    # Social media links
     email: v.gsteiger@gmail.com
     timezone: Europe/Zurich Timezone
     citizenship:
@@ -131,6 +125,5 @@ publications:
         authors: Silvan Heller; Viktor Gsteiger; Werner Bailer; Cathal Gurrin; Björn Þór Jónsson; Jakub Lokoč; Andreas Leibetseder; František Mejzlík; Ladislav Peška; Luca Rossetto et al.
         conference: "International Journal of Multimedia Information Retrieval (2022)"
 
-# Replace the footer:
 footer: >
   © 2023 Viktor Gsteiger
