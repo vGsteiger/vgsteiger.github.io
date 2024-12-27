@@ -11,90 +11,6 @@ contact:
     goodreads: 62284336-viktor
     orcid: 0000-0002-6750-5500
 
-career-profile:
-    title: About Me
-    summary: |
-      Hey there, folks! I'm Viktor, and I'm here to spill the beans on my academic and professional journey. Currently, I'm knee-deep in the fascinating world of Data Management Systems at ETH Zürich, chasing that elusive Master's degree.
-
-      You might also catch me working on my thesis, which is on the topic of Geo-Distributed Serverless Computing Systems at the University of British Columbia.
-
-      When you don't find me in front of a computer screen, I'm probably out and about, exploring the world as I'm a big fan of hiking. I also quite enjoy reading, and I'm always on the lookout for a good book recommendation. Please also feel free to reach out to me on Goodreads.
-
-      If you have any questions, feel free to reach out to me via email or LinkedIn. I am always happy to chat!
-education:
-    title: Formal Education
-    info:
-      - degree: Master Thesis
-        university: University of British Columbia
-        time: 2023 - 2024 (expected)
-        details: |
-          My masters thesis is on the topic of Geo-Distributed Serverless Computing Systems 
-          under the supervision of Mohammad Shahrad at the University of British 
-          Columbia Cloud Infrastructure Research for Reliability, Usability, and Scalability (CIRRUS) Lab. 
-          The thesis is supervised from ETH Zürich by Ana Klimovic. Additionally, 
-          the thesis is supported by the Mitacs Globalink Research Award, the Swiss-European Mobility Program Worldwide Project,
-          and the Zeno-Karl Schindler Foundation.
-      - degree: MSc in Computer Science
-        university: ETH Zürich
-        time: 2021 - 2024 (expected)
-        details: |
-          During my masters studies I focus on Data Manamgement Systems as well 
-          as cloud applications. I participated in various courses on the topics 
-          of cloud computing, high performance and parallel systems, serverless, 
-          and code optimization. Additionally, I participated in practical labs 
-          where I contributed to paper submissions under Prof. Dr. Ana Klimovic.
-            - Major: Data Management Systems
-            - Minor: Programming Languages and Software Engineering
-      - degree: BSc in Computer Science
-        university: University of Basel
-        time: 2018 - 2021
-        details: |
-          Gained fundamental knowledge in computer architecuteres, algorithm theory, 
-          theoretical computer science, network secutiry, artificial intelligence, software 
-          architecture and engineering. Contributed to two papers as part of my bachelors thesis
-          in the Databases and Information Systems (DBIS) group under Prof. Dr. Heiko Schuldt.
-            - GPA: 5.7/6 where 6 is best
-            - Bachelor Thesis: "Evaluating Algorithms for Temporal Queries in Ad-Hoc Video Retrieval"
-experiences:
-    title: Professional Experience
-    info:
-      - role: Research Assistant
-        time: October 2023 - November 2023
-        company: ETH Zürich
-        details: |
-          Research assistant at the Systems Group under Prof. Dr. Ana Klimovic.
-          Responsible for the porting of a storage system wrapper from Python to C++.
-      - role: Forward Deployed Software Engineer Intern
-        time: July 2023 - September 2023
-        company: Palantir Technologies
-        details: |
-          Developing customs solutions based on the Palantir Foundry techstack.
-      - role: DevOps Engineer
-        time: January 2022 - June 2023
-        company: Business Systems Integraions AG, Zürich, Switzerland
-        details: |
-          Responsible for designing, implementing, and maintaining complex infrastructure systems. 
-          This includes using technologies such as Kubernetes, Helm charts, Artifactory, GitLab, 
-          Ceph storage, S3, OpenShift, Docker, PostgreSQL, and Oracle databases.
-      - role: Full-Stack Software Engineering Contractor
-        time: February 2020 - September 2021
-        company: Bank for International Settlements, Basel, Switzerland
-        details: |
-          Partnership of the BIS and the University of Basel under the direct supervision of Prof. Dr. Heiko Schuldt.
-          Responsible for contributing to a natural language processing project stack in a Linux/Python/PostgreSQL/Azure 
-          DevOps/Angular environment, development and maintenance of information retrieval system.
-      - role: Teaching and Research Assistant
-        time: September 2019 - December 2021
-        company: University of Basel Department of Mathematics and Computer Science, Basel, Switzerland
-        details: |
-          As a Research Assistant under the supervision of Prof. Dr. sc. techn. ETH Heiko Schuldt, 
-          I was responsible for completing a variety of tasks related to graphical and analytical analysis 
-          of an international competition evaluation, as well as contributing to an analysis paper of the Video Browser Showdown 2021.
-          Teaching Assistant for the following lectures:
-            - 2x Extended programming basics (Java)
-            - Algorithms and Data Structures (Python)
-            - Programming Language Paradigms and Concepts (C++, Haskell, Prolog)
-            - Pattern Recognition (Python, Tensorflow)
 projects:
     title: Projects
     intro: >
@@ -106,24 +22,6 @@ projects:
       - title: vitrivr
         link: "https://github.com/vitrivr"
         tagline: "vitrivr is an open source full-stack content-based multimedia retrieval system with a focus on video."
-
-publications:
-    title: Academic Publications
-    papers:
-      - title: Towards A Platform and Benchmark Suite for Model Training on Dynamic Datasets
-        link: "https://doi.org/10.1145/3578356.3592585"
-        authors: Maximilian Böther, Foteini Strati, Viktor Gsteiger, Ana Klimovic
-        conference: "Proceedings of the 3rd Workshop on Machine Learning and Systems (2023)"
-    
-      - title: Multi-modal Interactive Video Retrieval with Temporal Queries
-        link: "https://doi.org/10.1007/978-3-030-98355-0_44"
-        authors: Silvan Heller; Rahel Arnold; Ralph Gasser; Viktor Gsteiger; Mahnaz Parian-Scherb; Luca Rossetto; Loris Sauter; Florian Spiess; Heiko Schuldt
-        conference: "International Conference on Multimedia Modeling (2022)"
-
-      - title: "Interactive video retrieval evaluation at a distance: comparing sixteen interactive video search systems in a remote setting at the 10th Video Browser Showdown"
-        link: "https://doi.org/10.1007/s13735-021-00225-2"
-        authors: Silvan Heller; Viktor Gsteiger; Werner Bailer; Cathal Gurrin; Björn Þór Jónsson; Jakub Lokoč; Andreas Leibetseder; František Mejzlík; Ladislav Peška; Luca Rossetto et al.
-        conference: "International Journal of Multimedia Information Retrieval (2022)"
 
 footer: >
   © 2023 Viktor Gsteiger
