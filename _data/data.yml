@@ -16,6 +16,9 @@ projects:
     intro: >
       I have contributed to the following projects:
     assignments:
+      - title: caribou
+        link: "https://github.com/ubc-cirrus-lab/caribou"
+        tagline: Caribou is a framework for running and deploying complex serverless workflows multi-constraint and multi-objective aware on hyper-scalers over multiple regions.
       - title: modyn
         link: "https://github.com/eth-easl/dynamic_datasets_dsl"
         tagline: "Modyn is a research-platform for training ML models on dynamic datasets."
