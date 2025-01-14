@@ -102,11 +102,11 @@ function App() {
   ];
 
   return (
-    <div className="relative">
+    <div className="relative bg-gradient-to-b from-gray-900/90 to-gray-800/90 min-h-screen">
       <AnimatedBackground />
       
       {/* Hero Section */}
-      <div className="min-h-screen flex flex-col items-center justify-center px-4 text-center relative bg-gradient-to-b from-gray-900/90 to-gray-800/90 z-10">
+      <div className="min-h-screen flex flex-col items-center justify-center px-4 text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">Viktor Gsteiger</h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-12">Code Wrangler | System Builder | Tech Explorer | Book Worm</p>
         
@@ -177,7 +177,7 @@ function App() {
       </div>
 
       {/* Projects Section */}
-      <div id="projects" className="py-20 px-4 md:px-8 bg-gradient-to-b from-gray-800/90 to-gray-900/90 z-10 relative">
+      <div id="projects" className="py-20 px-4 md:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-center mb-12 text-white">Projects</h2>
         <h3 className="text-2xl font-semibold text-center mb-12 text-gray-300">I actively contributed or initiated the following projects:</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -204,7 +204,7 @@ function App() {
       </div>
 
       {/* Papers Section */}
-      <div id="papers" className="py-20 px-4 md:px-8 bg-gradient-to-b from-gray-900/90 to-gray-800/90 z-10 relative">
+      <div id="papers" className="py-20 px-4 md:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-center mb-12 text-white">Papers</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {papers.slice().reverse().map((paper, index) => (
@@ -223,7 +223,7 @@ function App() {
       </div>
 
       {/* Stack Section */}
-      <div id="stack" className="py-20 px-4 md:px-8 bg-gradient-to-b from-gray-900/90 to-gray-800/90 z-10 relative">
+      <div id="stack" className="py-20 px-4 md:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-center mb-12 text-white">Tech Stack</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 max-w-4xl mx-auto">
           {stack.map((tech, index) => (
