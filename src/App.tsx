@@ -3,9 +3,9 @@ import { Github, Linkedin, BookOpen, GraduationCap, FileCode, ChevronDown, Code,
 import { AnimatedBackground } from './components/AnimatedBackground';
 
 function App() {
-  const [activeSection, setActiveSection] = useState<'projects' | 'stack' | null>(null);
+  const [activeSection, setActiveSection] = useState<'projects' | 'stack' | 'papers' | null>(null);
 
-  const scrollToSection = (section: 'projects' | 'stack') => {
+  const scrollToSection = (section: 'projects' | 'stack' | 'papers') => {
     setActiveSection(section);
     const element = document.getElementById(section);
     if (element) {
@@ -50,6 +50,57 @@ function App() {
     { name: "AWS", icon: <Cloud size={30}/> },
   ];
 
+  const papers = [
+    { 
+      name: "Evaluating Algorithms for Temporal Queries in Ad-Hoc Video Retrieval",
+      year: 2021,
+      type: "Bachelor Thesis",
+      link: "https://dbis.dmi.unibas.ch/teaching/studentprojects/evaluating-algorithms-for-temporal-queries-in-ad-hoc-video-retrieval/Thesis.pdf"
+    },
+    {
+      name: "Interactive video retrieval evaluation at a distance: comparing sixteen interactive video search systems in a remote setting at the 10th video browser showdown",
+      year: 2022,
+      type: "Paper",
+      link: "https://link.springer.com/article/10.1007/s13735-021-00225-2"
+    },
+    {
+      name: "Multi-modal interactive video retrieval with temporal queries",
+      year: 2022,
+      type: "Paper",
+      link: "https://www.zora.uzh.ch/id/eprint/217472/1/VBS22_vitrivr.pdf"
+    },
+    {
+      name: "Towards a platform and benchmark suite for model training on dynamic datasets",
+      year: 2023,
+      type: "Paper",
+      link: "https://dl.acm.org/doi/pdf/10.1145/3578356.3592585"
+    },
+    {
+      name: "Modyn: A Platform for Model Training on Dynamic Datasets With Sample-Level Data Selection",
+      year: 2023,
+      type: "Paper",
+      link: "https://arxiv.org/pdf/2312.06254"
+    },
+    {
+      name: "Holistically Optimizing Geospatial Serverless Workflow Deployment for Sustainable Computing",
+      year: 2024,
+      type: "Master Thesis",
+      link: "https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/695846/Gsteiger_Viktor.pdf"
+    },
+    {
+      name: "Caribou: Fine-Grained Geospatial Shifting of Serverless Applications for Sustainability",
+      year: 2024,
+      type: "Paper",
+      link: "https://cirrus.ece.ubc.ca/papers/sosp24_caribou.pdf"
+    },
+    {
+      name: "Modyn: Data-Centric Machine Learning Pipeline Orchestration",
+      year: 2024,
+      type: "Paper",
+      link: "https://www.mboether.com/assets/pdf/bother2025modyn.pdf"
+    }
+  ];
+
   return (
     <div className="relative">
       <AnimatedBackground />
@@ -69,6 +120,15 @@ function App() {
             className="px-8 py-3 border-2 border-blue-600 hover:border-blue-700 rounded-lg text-lg font-semibold transition-colors w-48 text-blue-600 hover:text-blue-700 bg-transparent"
           >
             Projects
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('papers');
+            }}
+            className="px-8 py-3 border-2 border-green-600 hover:border-green-700 rounded-lg text-lg font-semibold transition-colors w-48 text-green-600 hover:text-green-700 bg-transparent"
+          >
+            Papers
           </button>
           <button
             onClick={(e) => {
@@ -143,17 +203,36 @@ function App() {
         </div>
       </div>
 
+      {/* Papers Section */}
+      <div id="papers" className="py-20 px-4 md:px-8 bg-gradient-to-b from-gray-900/90 to-gray-800/90 z-10 relative">
+        <h2 className="text-4xl font-bold text-center mb-12 text-white">Papers</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {papers.slice().reverse().map((paper, index) => (
+            <div key={index} className="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-white">{paper.name}</h3>
+                <p className="text-gray-300 mb-4">{paper.type} ({paper.year})</p>
+                <a href={paper.link}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="text-blue-400 hover:text-blue-300">Read Paper</a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Stack Section */}
-      <div id="stack" className="py-20 px-4 md:px-8 bg-gradient-to-b from-gray-900/90 to-gray-800/90 z-10 relative user-select-none">
-        <h2 className="text-4xl font-bold text-center mb-12 text-white user-select-none">Tech Stack</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 max-w-4xl mx-auto user-select-none">
+      <div id="stack" className="py-20 px-4 md:px-8 bg-gradient-to-b from-gray-900/90 to-gray-800/90 z-10 relative">
+        <h2 className="text-4xl font-bold text-center mb-12 text-white">Tech Stack</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 max-w-4xl mx-auto">
           {stack.map((tech, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-2 user-select-none"
+              className="flex flex-col items-center gap-2"
             >
-              <span className="text-3xl user-select-none">{tech.icon}</span>
-              <span className="font-medium text-white text-sm user-select-none">{tech.name}</span>
+              <span className="text-3xl">{tech.icon}</span>
+              <span className="font-medium text-white text-sm">{tech.name}</span>
             </div>
           ))}
         </div>
