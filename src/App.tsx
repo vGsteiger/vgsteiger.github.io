@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Github, Linkedin, BookOpen, GraduationCap, FileCode, ChevronDown, Code, Database, Box, Layers, Building, Atom, Cloud, Server } from 'lucide-react';
 import { AnimatedBackground } from './components/AnimatedBackground';
 
