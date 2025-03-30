@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  assetsInclude: ['**/*.tex'], // Ensure .tex files are treated as assets
 });

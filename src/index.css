@@ -1,5 +1,57 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for LaTeX rendering */
+.katex {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.katex-display {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #d1d5db; /* Light gray for better readability */
+}
+
+.prose h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.prose h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.prose ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose a {
+  color: #60a5fa; /* Blue for links */
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: #3b82f6; /* Darker blue on hover */
+}
+
 @keyframes float {
   0% {
     transform: translateY(0) translateX(0);

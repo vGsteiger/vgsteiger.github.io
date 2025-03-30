@@ -10,7 +10,7 @@ interface FloatingIconProps {
 
 const FloatingIcon: React.FC<FloatingIconProps> = ({ Icon, style }) => (
   <div 
-    className="absolute text-gray-500 animate-float"  // Changed color to a more visible shade of gray
+    className="absolute text-gray-400 animate-float opacity-80 hover:opacity-100 transition-opacity"
     style={style}
   >
     <Icon size={35} />
@@ -24,8 +24,8 @@ export const AnimatedBackground: React.FC = () => {
         const Icon = icons[i % icons.length];
         const left = `${Math.random() * 100}%`;
         const top = `${Math.random() * 100}%`;
-        const animationDelay = `${Math.random() * 10}s`;
-        const animationDuration = `${10 + Math.random() * 10}s`;
+        const animationDelay = `${(Math.random() * 5).toFixed(2)}s`;
+        const animationDuration = `${(12 + Math.random() * 8).toFixed(2)}s`;
 
         return (
           <FloatingIcon
