@@ -32,12 +32,19 @@ function App() {
       demo: "https://systems.ethz.ch/research/blog/modyn.html"
     },
     {
+      title: "Mixtera",
+      image: "images/mixtera.png",
+      description: "Mixtera is an open-source data-centric training data plane built for modern LLM/VLM training.",
+      github: "https://github.com/eth-easl/mixtera",
+      demo: "https://github.com/eth-easl/mixtera/blob/main/examples/torchtitan.md"
+    },
+    {
       title: "vitrivr",
       image: "images/vitrivr.png",
       description: "vitrivr is an open source full-stack content-based multimedia retrieval system with a focus on video.",
       github: "https://github.com/vitrivr",
       demo: "https://vitrivr.org/vitrivr.html"
-    },
+    }
   ];
 
   const stack = [
@@ -101,6 +108,12 @@ function App() {
       year: 2024,
       type: "Paper",
       link: "https://www.mboether.com/assets/pdf/bother2025modyn.pdf"
+    },
+    {
+      name: "Mixtera: A Data Plane for Foundation Model Training",
+      year: 2025,
+      type: "Paper",
+      link: "https://mboether.com/assets/pdf/bother2025mixtera.pdf"
     }
   ];
 
