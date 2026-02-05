@@ -1,10 +1,10 @@
 import React from 'react';
-import { BookOpen, Code, Database, Globe, Terminal, Laptop } from 'lucide-react';
+import { BookOpen, Code, Database, Globe, Terminal, Laptop, LucideProps } from 'lucide-react';
 
 const icons = [BookOpen, Code, Database, Globe, Terminal, Laptop];
 
 interface FloatingIconProps {
-  Icon: React.ComponentType<any>;
+  Icon: React.ComponentType<LucideProps>;
   style: React.CSSProperties;
 }
 
@@ -18,9 +18,11 @@ const FloatingIcon: React.FC<FloatingIconProps> = ({ Icon, style }) => (
 );
 
 export const AnimatedBackground: React.FC = () => {
+  const iconCount = typeof window !== 'undefined' && window.innerWidth < 768 ? 10 : 20;
+
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-      {[...Array(20)].map((_, i) => {
+      {[...Array(iconCount)].map((_, i) => {
         const Icon = icons[i % icons.length];
         const left = `${Math.random() * 100}%`;
         const top = `${Math.random() * 100}%`;

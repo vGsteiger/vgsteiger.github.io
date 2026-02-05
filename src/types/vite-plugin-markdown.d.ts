@@ -1,3 +1,4 @@
 declare module 'vite-plugin-markdown' {
-  export function plugin(): any;
+  import type { Plugin } from 'vite';
+  export function plugin(): Plugin;
 }
