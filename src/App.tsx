@@ -42,6 +42,13 @@ function App() {
       description: "vitrivr is an open source full-stack content-based multimedia retrieval system with a focus on video.",
       github: "https://github.com/vitrivr",
       demo: "https://vitrivr.org/vitrivr.html"
+    },
+    {
+      title: "DokAssist",
+      image: "images/dokassist.svg",
+      description: "A local, encrypted macOS application for Swiss patient record management with AES-256-GCM encryption, Swiss healthcare standards, and on-device LLM integration.",
+      github: "https://github.com/vGsteiger/IbexDoc",
+      demo: "https://github.com/vGsteiger/IbexDoc/releases"
     }
   ];
 
