@@ -44,11 +44,11 @@ function App() {
       demo: "https://vitrivr.org/vitrivr.html"
     },
     {
-      title: "DokAssist",
-      image: "images/dokassist.svg",
+      title: "RamDoc",
+      image: "images/RamDoc.png",
       description: "A local, encrypted macOS application for Swiss patient record management with AES-256-GCM encryption, Swiss healthcare standards, and on-device LLM integration.",
-      github: "https://github.com/vGsteiger/IbexDoc",
-      demo: "https://github.com/vGsteiger/IbexDoc/releases"
+      github: "https://github.com/vGsteiger/RamDoc",
+      demo: "https://github.com/vGsteiger/RamDoc/releases"
     }
   ];
 
