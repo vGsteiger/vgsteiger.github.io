@@ -84,7 +84,7 @@ export const BlogPost: React.FC = () => {
               part.startsWith('$') && part.endsWith('$') ? (
                 <span
                   key={i}
-                  className="text-blue-400"
+                  className="article-equation"
                   dangerouslySetInnerHTML={renderLatex(part.slice(1, -1), false)}
                 />
               ) : (
@@ -113,27 +113,27 @@ export const BlogPost: React.FC = () => {
   };
 
   if (!metadata) {
-    return <div className="text-center text-white">Loading...</div>;
+    return <div className="loading">Loading index…</div>;
   }
 
   return (
-    <div className="py-20 px-4 md:px-8 max-w-4xl mx-auto">
+    <div className="article-page">
       <button
         onClick={() => navigate('/')}
-        className="mb-8 px-8 py-3 border-2 rounded-lg text-lg font-semibold transition-colors bg-transparent border-blue-600 text-blue-600 hover:border-blue-700 hover:text-blue-700"
+        className="article-back"
       >
-        Back to Home
+        ← Back to index
       </button>
-      <article className="prose prose-invert lg:prose-xl">
+      <article className="article-prose">
         {/* Title, Date, and Description */}
-        <header className="mb-8">
-          <h1 className="text-4xl font-bold text-white">{metadata.title}</h1>
-          <p className="text-gray-400 text-sm">{metadata.date}</p>
-          <p className="text-gray-300 text-base">{metadata.description}</p>
+        <header>
+          <p className="article-date">Research note / {metadata.date}</p>
+          <h1>{metadata.title}</h1>
+          <p className="article-description">{metadata.description}</p>
         </header>
 
         {/* Content */}
-        <div className="space-y-6">{parseContent(content)}</div>
+        <div className="article-body">{parseContent(content)}</div>
       </article>
     </div>
   );
