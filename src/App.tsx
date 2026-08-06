@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useEffect, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
 import { Github, Linkedin, FileCode, BookOpen, GraduationCap, ArrowDown, ArrowUpRight, Code, Database, Box, Layers, Building, Atom, Cloud, Server, Terminal, Bot, Activity, Workflow, Braces } from 'lucide-react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatedBackground } from './components/AnimatedBackground';
@@ -43,6 +43,7 @@ function Home() {
   const [activeFolio, setActiveFolio] = useState(0);
   const [isTurning, setIsTurning] = useState(false);
   const [scrollTurn, setScrollTurn] = useState<{ number: string; label: string; direction: 'forward' | 'back' } | null>(null);
+  const touchStart = useRef<{ x: number; y: number; atTop: boolean; atBottom: boolean } | null>(null);
   const openFolio = useCallback((nextIndex: number) => {
     if (isTurning || nextIndex === activeFolio || nextIndex < 0 || nextIndex >= folios.length) return;
     const target = folios[nextIndex];
@@ -78,6 +79,51 @@ function Home() {
 
     window.addEventListener('wheel', onWheel, { passive: false });
     return () => window.removeEventListener('wheel', onWheel);
+  }, [activeFolio, isTurning, openFolio]);
+
+  useEffect(() => {
+    const onTouchStart = (event: TouchEvent) => {
+      if (event.touches.length !== 1 || isTurning) {
+        touchStart.current = null;
+        return;
+      }
+
+      const currentPage = document.querySelector<HTMLElement>('.folio-page.is-active');
+      if (!currentPage) return;
+
+      const touch = event.touches[0];
+      touchStart.current = {
+        x: touch.clientX,
+        y: touch.clientY,
+        atTop: currentPage.scrollTop <= 2,
+        atBottom: currentPage.scrollTop + currentPage.clientHeight >= currentPage.scrollHeight - 2,
+      };
+    };
+
+    const onTouchEnd = (event: TouchEvent) => {
+      const start = touchStart.current;
+      touchStart.current = null;
+      if (!start || event.changedTouches.length !== 1 || isTurning) return;
+
+      const touch = event.changedTouches[0];
+      const deltaX = touch.clientX - start.x;
+      const deltaY = touch.clientY - start.y;
+      const isVerticalSwipe = Math.abs(deltaY) >= 56 && Math.abs(deltaY) > Math.abs(deltaX) * 1.25;
+      if (!isVerticalSwipe) return;
+
+      if (deltaY < 0 && start.atBottom && activeFolio < folios.length - 1) {
+        openFolio(activeFolio + 1);
+      } else if (deltaY > 0 && start.atTop && activeFolio > 0) {
+        openFolio(activeFolio - 1);
+      }
+    };
+
+    window.addEventListener('touchstart', onTouchStart, { passive: true });
+    window.addEventListener('touchend', onTouchEnd, { passive: true });
+    return () => {
+      window.removeEventListener('touchstart', onTouchStart);
+      window.removeEventListener('touchend', onTouchEnd);
+    };
   }, [activeFolio, isTurning, openFolio]);
 
   return <>
@@ -146,6 +192,11 @@ function Home() {
         <footer><span>VG / Personal index</span><span>Built with care in the quiet hours.</span><button onClick={() => openFolio(0)}>Back to start ↑</button></footer>
       </section>
     </main>
+    <nav className="mobile-folio-nav" aria-label="Page navigation">
+      <button onClick={() => openFolio(activeFolio - 1)} disabled={activeFolio === 0 || isTurning} aria-label="Previous page">←</button>
+      <span aria-live="polite">{folios[activeFolio].number} / {folios[activeFolio].label}</span>
+      <button onClick={() => openFolio(activeFolio + 1)} disabled={activeFolio === folios.length - 1 || isTurning} aria-label="Next page">→</button>
+    </nav>
   </>;
 }
 
